@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/lagenorhynque/stringutil"
+	"github.com/lagenorhynque/golang-test/stringutil"
 )
 
 func fibonacci() func() int {
