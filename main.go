@@ -27,5 +27,10 @@ func main() {
 	}
 
 	fmt.Println("--- async example ---")
+	fmt.Println("goroutine:")
 	asyncexample.TestGoroutine()
+	fmt.Println("channel:")
+	asyncexample.TestChannel()
+	fmt.Println("select:")
+	asyncexample.TestSelect()
 }
