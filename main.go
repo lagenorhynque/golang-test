@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/lagenorhynque/golang-test/asyncexample"
 	"github.com/lagenorhynque/golang-test/stringutil"
 )
 
@@ -15,11 +16,16 @@ func fibonacci() func() int {
 }
 
 func main() {
+	fmt.Println("--- Hello world ---")
 	fmt.Printf("Hello, world!\n")
 	fmt.Println(stringutil.Reverse("!dlrow ,olleH"))
 
+	fmt.Println("--- fibonacci ---")
 	f := fibonacci()
 	for i := 0; i < 10; i++ {
 		fmt.Println(f())
 	}
+
+	fmt.Println("--- async example ---")
+	asyncexample.TestGoroutine()
 }
