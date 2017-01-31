@@ -1,4 +1,4 @@
 golang-test
 ===========
 
-Go言語についての学習メモ。
+Study notes on Go.
